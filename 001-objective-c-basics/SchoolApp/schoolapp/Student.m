@@ -9,5 +9,15 @@
 #import "Student.h"
 
 @implementation Student
+@synthesize name;
 
+- (NSString *)description
+{
+    return self.name;
+}
+- (void)dealloc
+{
+    [name release];
+    [super dealloc];
+}
 @end
